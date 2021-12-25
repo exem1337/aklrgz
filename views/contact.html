@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Sora:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Contact us</title>
+  </head>
+  <body>
+    <header class="shadow big-header">
+      <p class="logo">Buisness-planner</p>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Наши предложения</a></li>
+          <li><a href="">Контакты</a></li>
+          <li><a href="../views/about.html">О нас</a></li>
+          <li><a class="cart-open" style="cursor: pointer;">Корзина</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <header class="burger shadow">
+      <p class="logo">Buisness-planner</p>
+      <i class="material-icons burger-button">dehaze</i>
+    </header>
+
+    <nav class="burger-nav">
+      <ul>
+        <li><a href="../index.html">Наши предложения</a></li>
+        <li><a href="views/contact.html">Контакты</a></li>
+        <li><a href="views/about.html">О нас</a></li>
+        <li><a class="cart-open" style="cursor: pointer">Корзина</a></li>
+      </ul>
+      <i class="material-icons close-burger">reply</i>
+    </nav>
+
+    <main class="contact-form">
+      <h1>Связаться с нами</h1>
+      <div class="container">
+        <form action="" id="formContact">
+          <div class="input">
+            <input type="text" id="name" />
+            <label for="name">Введите ваше ФИО</label>
+          </div>
+          <div class="input">
+            <input type="email" id="email" />
+            <label for="name">E-mail</label>
+          </div>
+          <div class="input">
+            <input type="text" id="phone">
+            <label for="name">Номер телефона</label>
+          </div>
+          <div class="input">
+              <textarea placeholder="Опишите подробнее ваши пожелания" name="problem-text" id="problem-text" cols="30" rows="10"></textarea>
+          </div>
+          <input type="submit" id="submit">
+        </form>
+      </div>
+    </main>
+
+    <div class="cart no-display">
+        <i class="material-icons close-cart">close</i>
+        <div class="container cart-inner">
+          <h3>Ваша корзина</h3>
+          <p class="empty-cart no-display">
+            Ваша корзина пуста... <br />
+            Мы уверены, что вы сможете найти подходящее вам предложение
+          </p>
+          <form action="" class="form-cart shadow" id="formContact">
+            <h4 class="cart-plan">Вы выбрали план: Для ИП</h4>
+            <div class="input">
+              <input type="text" id="name" />
+              <label for="name">Введите ваше ФИО</label>
+            </div>
+            <div class="input">
+              <input type="email" id="name" />
+              <label for="name">E-mail</label>
+            </div>
+            <div class="input">
+              <input type="text" />
+              <label for="name">Номер телефона</label>
+            </div>
+            <div class="input">
+              <textarea
+                placeholder="Опишите подробнее ваш запрос"
+                name="problem-text"
+                id="problem-text"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <input type="submit" id="submit" value="Заказать бизнес-план" />
+          </form>
+        </div>
+      </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../script/formValidate.js"></script>
+    <script src="../script/cartWorker.js"></script>
+    <script src="../script/burger.js"></script>
+  </body>
+</html>

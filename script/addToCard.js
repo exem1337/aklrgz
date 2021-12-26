@@ -1,7 +1,6 @@
 var data;
 
 $(".addToCard").on("click", function () {
-  console.log("object");
   var parent_id = $(this).parent();
   parent_id.each(function () {
     var $this = $(this);

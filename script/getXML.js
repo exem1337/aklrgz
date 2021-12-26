@@ -1,15 +1,15 @@
-$(document).ready(function () {
+$(document).ready(function () { //если документ прогрузился
   $.ajax({
     type: "GET",
     url: "cart.xml",
     dataType: "text",
     success: function (xml) {
       var parser = new DOMParser();
-      var xmlDoc = parser.parseFromString(xml, "text/xml");
-      var json = xmlToJson(xmlDoc);
+      var xmlDoc = parser.parseFromString(xml, "text/xml"); //из string в xml
+      var json = xmlToJson(xmlDoc); //конвертируем в json объект
       const offers = json.Offers.Offer;
       for (var i = 0; i < offers.length; i++) {
-        const offer = offers[i];
+        const offer = offers[i]; //забираем новый оффер
         const offerContainer = document.createElement("div");
         offerContainer.classList.add("offer");
         offerContainer.classList.add("small-shadow");
